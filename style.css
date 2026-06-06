@@ -813,7 +813,7 @@ body{
 @media(max-width:768px){
 
     .grid_why_choose_us_container{
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:1fr;
         gap:15px;
     }
 
@@ -852,7 +852,7 @@ body{
 @media(max-width:480px){
 
     .grid_why_choose_us_container{
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:1fr;
         gap:12px;
     }
 
@@ -1001,7 +1001,7 @@ body{
     }
 
     .our_service_grid{
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:1fr;
         gap:15px;
     }
 
@@ -1037,7 +1037,7 @@ body{
 @media(max-width:480px){
 
     .our_service_grid{
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:1fr;
         gap:12px;
     }
 
