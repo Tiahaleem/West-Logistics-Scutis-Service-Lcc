@@ -7,7 +7,7 @@
 
 body{
     background:#ffffff;
-    padding-top:66px;
+    padding-top:86px;
 }
 
 /* TOP BAR */
@@ -16,44 +16,43 @@ body{
   background: #005300;
   color: white;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 6px 20px;
-  font-size: 12px;
-
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-
   z-index: 10000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: 8px 20px;
+  font-size: 12px;
   box-sizing: border-box;
 }
 
 .top-right {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
-/* Top bar responsiveness */
+
 @media (max-width: 768px) {
   .top-bar {
-    font-size: 10px;
-    padding: 5px 10px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 12px;
   }
 
   .top-right {
-    gap: 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
   }
-}
-/*  */
-.top-right{
-    position:absolute;
-    right:30px;
-    display:flex;
-    gap:30px;
-}
+}/*  */
 
 /* NAVBAR */
 
@@ -70,7 +69,7 @@ body{
     border-bottom:1px solid #d8d8d8;
 
     position:fixed;
-    top:20px; /* exactly below top-bar */
+    top:40px; /* exactly below top-bar */
     left:0;
     width:100%;
 
