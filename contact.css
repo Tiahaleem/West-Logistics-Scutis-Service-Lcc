@@ -198,3 +198,43 @@
     }
 
 }
+.submit-btn,
+.submit-btn span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* Form Message */
+.form-message {
+    margin-top: 20px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.form-message.success {
+    background: #eaf8ef;
+    color: #1b5e20;
+    border: 1px solid #81c784;
+    display: block;
+}
+
+.form-message.error {
+    background: #ffebee;
+    color: #b71c1c;
+    border: 1px solid #ef9a9a;
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

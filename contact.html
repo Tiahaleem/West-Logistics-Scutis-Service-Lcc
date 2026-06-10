@@ -17,7 +17,7 @@
   </div>
 
   <div class="top-right">
-    <span>sales@westlogistics.com</span>
+    <span>saleswestlogisticscutis@outlook.com</span>
     <span>+1 (646) 833-8834</span>
   </div>
 </div>
@@ -94,44 +94,64 @@
                 Fields marked with * are required.
             </p>
 
-            <form>
+            <form id="contact-form">
 
                 <div class="form-grid">
 
                     <div class="form-group">
                         <label>FULL NAME *</label>
-                        <input type="text">
+                        <input type="text"
+                        name="full_name"
+                        required
+                        >
                     </div>
 
                     <div class="form-group">
                         <label>COMPANY NAME *</label>
-                        <input type="text">
+                        <input type="text"
+                        name="company_name"
+                        required>
                     </div>
 
                     <div class="form-group">
                         <label>EMAIL *</label>
-                        <input type="email">
+                        <input type="email"
+       name="from_email"
+       required>
                     </div>
 
                     <div class="form-group">
                         <label>OFFICE NUMBER</label>
-                        <input type="text">
+                        <input type="text"
+       name="office_number">
                     </div>
 
                     <div class="form-group">
                         <label>COUNTRY *</label>
-                        <input type="text">
+                        <input type="text"
+       name="country"
+       required>
                     </div>
 
                     <div class="form-group">
                         <label>PRODUCT INTEREST *</label>
 
-                        <select>
-                            <option>Select a product</option>
-                            <option>Crude Palm Oil (CPO)</option>
-                            <option>Refined Palm Oil</option>
-                            <option>Palm Kernel Oil</option>
-                            <option>RBD Palm Oil</option>
+                        <select name="product_interest" required>
+                            <option value="Crude Palm Oil (CPO)">
+    Crude Palm Oil (CPO)
+</option>
+
+<option value="Refined Palm Oil">
+    Refined Palm Oil
+</option>
+
+<option value="Palm Kernel Oil">
+    Palm Kernel Oil
+</option>
+
+<option value="RBD Palm Oil">
+    RBD Palm Oil
+</option>
                         </select>
 
                     </div>
@@ -142,16 +162,19 @@
 
                     <label>MESSAGE *</label>
 
-                    <textarea placeholder="Tell us your volume, destination port, preferred Incoterm, and timeline..."></textarea>
+                    <textarea
+    name="message"
+    placeholder="Tell us your volume, destination port, preferred Incoterm, and timeline..."
+    required></textarea>
 
                 </div>
 
-                <button type="submit" class="submit-btn">
-                    Send Inquiry →
-                </button>
+<button type="submit" class="submit-btn">
+    <span>Send Inquiry →</span>
+</button>
 
             </form>
-
+<div class="form-message"></div>
         </div>
 
         <!-- RIGHT SIDE -->
@@ -164,7 +187,7 @@
 
                 <div>
                     <span>EMAIL</span>
-                    <h4>sales@westlogisticscutis.com</h4>
+                    <h4>saleswestlogisticscutis@outlook.com</h4>
                 </div>
 
             </a>
@@ -210,7 +233,7 @@
 
                 <div>
                     <span>LOCATION</span>
-                    <h4>Wilmington, Delaware, USA</h4>
+                    <h4> Corporate Office (USA) 906 E 49th Street Brooklyn, NY 11203 New York, USA</h4>
                 </div>
 
             </div>
@@ -294,8 +317,8 @@ New York, USA
 
   <div class="contact-item">
     ✉️
-    <a href="mailto:sales@westlogisticscutis.com">
-      sales@westlogisticscutis.com
+    <a href="saleswestlogisticscutis@outlook.com">
+      saleswestlogisticscutis@outlook.com
     </a>
   </div>
 
@@ -337,5 +360,7 @@ New York, USA
     </svg>
 </a>
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>
