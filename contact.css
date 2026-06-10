@@ -238,3 +238,23 @@
         transform: translateY(0);
     }
 }
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+@media(max-width:768px) {
+    .contact-container {
+        gap: 20px;
+    }
+
+    .quote-form-card {
+        padding: 20px;
+    }
+
+    .info-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
