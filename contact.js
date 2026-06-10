@@ -29,7 +29,7 @@ form.addEventListener("submit", function (e) {
             "service_qzdc7c7",
             "template_5rvstut",
             {
-                to_email: form.elements["user_email"].value,
+                to_email: form.from_email.value,
                 full_name: form.full_name.value,
                 company_name: form.company_name.value,
                 country: form.country.value,
