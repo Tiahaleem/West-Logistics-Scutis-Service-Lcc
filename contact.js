@@ -25,18 +25,18 @@ form.addEventListener("submit", function (e) {
 
     .then(() => {
 
-       return emailjs.send(
-    "service_qzdc7c7",
-    "template_5rvstut",
-    {
-        to_email: form.elements["user_email"].value,
-        full_name: form.elements["full_name"].value,
-        company_name: form.elements["company_name"].value,
-        country: form.elements["country"].value,
-        office_number: form.elements["office_number"].value,
-        product_interest: form.elements["product_interest"].value
-    }
-);
+        return emailjs.send(
+            "service_qzdc7c7",
+            "template_5rvstut",
+            {
+                to_email: form.elements["user_email"].value,
+                full_name: form.full_name.value,
+                company_name: form.company_name.value,
+                country: form.country.value,
+                office_number: form.office_number.value,
+                product_interest: form.product_interest.value
+            }
+        );
 
     })
 
