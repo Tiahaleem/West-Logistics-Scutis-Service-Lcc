@@ -1,0 +1,260 @@
+.contact-section{
+    background:#f8f9f6;
+    padding:100px 0;
+}
+
+.contact-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:30px;
+}
+
+.quote-form-card{
+    background:#fff;
+    border:1px solid #dce4d8;
+    border-radius:14px;
+    padding:35px;
+    box-shadow:0 5px 20px rgba(0,0,0,.04);
+}
+
+.quote-form-card h2{
+    font-family:"Playfair Display", serif;
+    font-size:34px;
+    color:#234d20;
+    margin-bottom:8px;
+}
+
+.form-note{
+    font-size:14px;
+    color:#666;
+    margin-bottom:25px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    font-size:12px;
+    font-weight:700;
+    color:#234d20;
+    margin-bottom:8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    border:1px solid #d8dfd5;
+    border-radius:6px;
+    padding:14px;
+    font-size:14px;
+    outline:none;
+}
+
+.form-group textarea{
+    min-height:140px;
+    resize:none;
+}
+
+.full-width{
+    margin-top:18px;
+}
+
+.submit-btn{
+    margin-top:20px;
+    background:#c9a700;
+    color:#000;
+    border:none;
+    padding:14px 26px;
+    border-radius:6px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    transform:translateY(-3px);
+}
+
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.info-card{
+    background:#fff;
+    border:1px solid #dce4d8;
+    border-radius:12px;
+    padding:18px;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.info-card:hover{
+    transform:translateY(-3px);
+}
+
+.info-icon{
+    width:50px;
+    height:50px;
+
+    background:#0d5d24;
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:10px;
+    font-size:22px;
+}
+
+.info-card span{
+    display:block;
+    font-size:11px;
+    color:#c9a700;
+    font-weight:700;
+    margin-bottom:4px;
+}
+
+.info-card h4{
+    color:#18331a;
+    font-size:15px;
+    margin:0;
+}
+
+.info-card h4 a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.wechat-card{
+    background:#fff;
+    border:1px solid #dce4d8;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+}
+
+.wechat-card img{
+    width:100%;
+    max-width:280px;
+    margin:auto;
+    display:block;
+}
+
+.wechat-card h3{
+    margin-top:15px;
+    color:#234d20;
+}
+
+.wechat-card p{
+    color:#666;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .quote-form-card{
+        padding:25px;
+    }
+
+    .quote-form-card h2{
+        font-size:28px;
+    }
+
+    .info-card{
+        padding:15px;
+    }
+
+    .wechat-card img{
+        max-width:220px;
+    }
+
+}
+.submit-btn,
+.submit-btn span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* Form Message */
+.form-message {
+    margin-top: 20px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.form-message.success {
+    background: #eaf8ef;
+    color: #1b5e20;
+    border: 1px solid #81c784;
+    display: block;
+}
+
+.form-message.error {
+    background: #ffebee;
+    color: #b71c1c;
+    border: 1px solid #ef9a9a;
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+@media(max-width:768px) {
+    .contact-container {
+        gap: 20px;
+    }
+
+    .quote-form-card {
+        padding: 20px;
+    }
+
+    .info-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
