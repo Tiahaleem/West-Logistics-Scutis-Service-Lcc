@@ -20,7 +20,7 @@ export default async function handler(req, res) {
 
     await resend.emails.send({
       from: "West Logistics <sales@westlogisticsservices.com>",
-      to: "saleswestlogisticscutis@outlook.com",
+      to: "saleswestlogistics@gmail.com",
       replyTo: email,
       subject: `New Palm Oil Inquiry from ${name}`,
       html: `
