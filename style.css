@@ -164,9 +164,10 @@ body{
 }
 
 .logo-icon img{
-    width: 110px;
+    width: 150px;
     height: auto;
     display:block;
+    transition:.3s ease;
 }
 
 .nav-links{
@@ -221,6 +222,9 @@ body{
         width:95%;
     }
 
+      .logo-icon img{
+        width:130px;
+    }
     .nav-links{
         gap:16px;
     }
@@ -295,6 +299,9 @@ body{
         transform:translateY(0);
     }
 
+        .logo-icon img{
+        width:120px;
+    }
     .nav-links li{
         width:100%;
     }
@@ -335,6 +342,9 @@ body{
         letter-spacing:1px;
     }
 
+    .logo-icon img{
+        width:105px;
+    }
     .top-bar{
         font-size:9px;
     }
